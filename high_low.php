@@ -6,6 +6,14 @@ if ($argc < 3) {
 $min = $argv[1];
 $max = $argv[2];
 
+if((!is_numeric($min))|| (!is_numeric($max))){
+	die("Please enter numbers only".PHP_EOL);
+}
+
+if($argv[1] > $argv[2]){
+	$min = $argv[2];
+	$max = $argv[1];
+}
 
 $answer = mt_rand($min,$max);
 $counter = 0;
@@ -24,4 +32,4 @@ $counter = 0;
 		$counter +=1;
 		}
 	} while ($guess != $answer);
-		fwrite(STDOUT, "Congratulations you guessed the number in ". $counter . " guesses !!!!" . PHP_EOL);
+		fwrite(STDOUT, "Congratulations you guessed the number in ". $counter . " guess(es) !!!!" . PHP_EOL);
