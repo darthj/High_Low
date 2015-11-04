@@ -1,6 +1,6 @@
 <?php
 if ($argc < 3) {
-	die("There are not enough arguments to run this program!!!!!". PHP_EOL);
+	die("There are not enough arguments to run this program. Please pass me a min and max.". PHP_EOL);
 }
 
 $min = $argv[1];
