@@ -23,3 +23,13 @@ foreach ($things as $thing){
 		echo $thing. " is scalar." . PHP_EOL;
 	}
 }
+echo "=============".PHP_EOL;
+foreach($things as $thing){
+	if(is_array($thing)){
+		foreach($thing as $item){
+			echo $item . PHP_EOL;
+		}
+	} else {
+		echo $thing . PHP_EOL;
+	}
+}
