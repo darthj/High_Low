@@ -17,6 +17,7 @@ foreach ($things as $thing) {
 		echo "string." . PHP_EOL;
 	}
 }
+echo "=============".PHP_EOL;
 
 foreach ($things as $thing){
 	if(is_scalar($thing)){
@@ -24,11 +25,13 @@ foreach ($things as $thing){
 	}
 }
 echo "=============".PHP_EOL;
+
 foreach($things as $thing){
 	if(is_array($thing)){
+		echo "Array (";		
 		foreach($thing as $item){
-			echo $item . PHP_EOL;
-		}
+			echo " $item ";
+		} echo ")". PHP_EOL;
 	} else {
 		echo $thing . PHP_EOL;
 	}
