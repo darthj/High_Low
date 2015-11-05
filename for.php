@@ -11,7 +11,8 @@ do{
 } while(!is_numeric($num2));
 
 fwrite(STDOUT, 'Please enter an incrementer. ');
-	$num3 = trim(fgets(STDIN));
+$num3 = trim(fgets(STDIN));
+
 if (empty($num3)){
 	$num3 = 1;
 }
