@@ -17,4 +17,9 @@ foreach ($things as $thing) {
 		echo "string." . PHP_EOL;
 	}
 }
-	
+
+foreach ($things as $thing){
+	if(is_scalar($thing)){
+		echo $thing. " is scalar." . PHP_EOL;
+	}
+}
