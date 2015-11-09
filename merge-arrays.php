@@ -11,10 +11,10 @@ function combineArrays($array1, $array2){
 		{
 			if ($array1[$i] === $array2[$i]){
 			array_push($newArray,$array1[$i]);
-		} 	else {
+			} else {
 			array_push($newArray, $array1[$i]);
 			array_push($newArray, $array2[$i]);
-		}
+			}
 		} print_r($newArray).PHP_EOL;
 	 }
 
