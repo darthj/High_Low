@@ -19,12 +19,3 @@ function combineArrays($array1, $array2){
 	 }
 
 combineArrays($names, $compare);
-
-	
-
-
-
-	// $difference = array_diff($array1, $array2);
-	// var_dump($difference);
-	// $new = array_push($array1, $difference);
-	// print_r($new).PHP_EOL;
