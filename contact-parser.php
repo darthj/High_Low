@@ -13,7 +13,7 @@ function parseContacts($filename)
     		$phone = $separate[1];
     		$areacode = substr($phone, 0,3);
     		$prefix = substr($phone,3,3);
-    		$last = substr($phone, -7, 4);
+    		$last = substr($phone, -4);
     		$phone = $areacode.'-'.$prefix.'-'.$last;
     		$contacts[]= [
     			'name' => $name,
@@ -21,7 +21,7 @@ function parseContacts($filename)
     		];
     	} 
     fclose($handle);
-	    return $contacts;
+    return $contacts;
 }
 
 var_dump(parseContacts('data/contacts.txt'));
