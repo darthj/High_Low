@@ -1,0 +1,22 @@
+
+05:28:01 PM
+INFO This is an info message.
+05:28:01 PM
+ERROR This is an info message.
+05:30:08 PM
+INFO This is an info message.
+05:30:08 PM
+ERROR This is an info message.
+2015-11-12 05:31:05INFO This is an info message.
+2015-11-12 05:31:05ERROR This is an info message.
+2015-11-12 05:32:19 INFO This is an info message.
+2015-11-12 05:32:19 ERROR This is an info message.2015-11-12 05:43:36 INFO This is an info message.
+2015-11-12 05:43:36 ERROR This is an error message.
+
+2015-11-12 05:44:19 INFO This is an info message.
+
+2015-11-12 05:44:19 ERROR This is an error message.
+
+2015-11-12 05:49:16 INFO This is an info message.
+
+2015-11-12 05:49:16 ERROR This is an error message.
