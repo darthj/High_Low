@@ -27,11 +27,15 @@ function monthlyReport($filename)
     	arsort($report);
     }
 	fclose($handle);
+    
     array_unshift($report,['Units','Full Name', 'EE Number']);
     return $report;
 }
 
 var_dump(monthlyReport('data/report.txt'));
+function countEE($filename){
+    count($filename);
+}
 
 function displayReport($filename)
 foreach($report as $value){
